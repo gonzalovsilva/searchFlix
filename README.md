@@ -1,4 +1,4 @@
-# searchFlix ([DEMO]())
+# searchFlix ([DEMO](https://gonzalovsilva.github.io/searchFlix/))
 
 This is a standalone version of the search and filtering functionality for [The Theatre student group project](https://github.com/gonzalovsilva/getflixProject).
 
