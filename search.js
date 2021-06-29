@@ -1,5 +1,5 @@
 const moviesContainer = document.getElementById('movies');
-const apiKey = '${{ secrets.TMDB_API_KEY }}';
+const apiKey = '04c35731a5ee918f014970082a0088b1';
 const posters = 'https://images.tmdb.org/t/p/w185'
 const tmdbBaseUrl = 'https://api.themoviedb.org/3'
 const search_input = document.getElementById('search_input');
