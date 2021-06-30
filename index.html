@@ -15,15 +15,15 @@
 <body>
     <header class="container">
         <div class="d-flex justify-content-end">
-            <div id="myform" class="searchbar">
+            <div id="myform" class="d-flex justify-sm-content-between searchbar">
                 <label class="search_label" for="search_input">Search :</label>
-                <input id="search_input" class="search_input" type="text" name="search" onkeypress="clickPress(event)">
-                <button id="btn_search" aria-label="search" class="search_icon"><i class="fas fa-search"></i></button>
+                <input id="search_input" class="flex-shrink-1 flex-grow-1 search_input" type="text" name="search" onkeypress="clickPress(event)">
+                <button id="btn_search" aria-label="search" class="flex-shrink-0 search_icon"><i class="fas fa-search"></i></button>
             </div>
         </div>
     </header>
     <main class="container">
-        <div class="">
+        <div>
             <div id="switch" class="">
                 <div id="filters" class="">
                     <ul class="d-flex flex-wrap">
