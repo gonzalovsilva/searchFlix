@@ -26,7 +26,7 @@
         <div>
             <div id="switch" class="">
                 <div id="filters" class="">
-                    <ul class="d-flex flex-wrap">
+                    <ul id='filters-list' class="d-flex flex-wrap">
                         <li>
                             <form id="switch_ctrl" class="d-flex justify-content-center">
                                 <p id="filterText" class="align-self-center px-2 text-light">Find by :</p>
@@ -62,12 +62,6 @@
                         <li><button type="button" id="war" class="cat d-none" value=10752 >War</button></li>
                         <li><button type="button" id="western" class="cat d-none" value=37 >Western</button></li>
                         <!-- Year buttons -->
-                        <li><button type="button" class="year d-none" id="2021" >2021</button></li>
-                        <li><button type="button" class="year d-none" id="2020" >2020</button></li>
-                        <li><button type="button" class="year d-none" id="2019" >2019</button></li>
-                        <li><button type="button" class="year d-none" id="2018" >2018</button></li>
-                        <li><button type="button" class="year d-none" id="2017" >2017</button></li>
-                        <li><button type="button" class="year d-none" id="2016" >2016</button></li>
                     </ul>
                 </div>
             </div>
@@ -80,7 +74,7 @@
     </main>
 </body>
 <!--search functions-->
-<script src="search.js"></script>
+<script defer src="search.js"></script>
 <!-- Font Awesome JS -->
 <script src="https://kit.fontawesome.com/770384ac45.js" crossorigin="anonymous"></script>
 <!-- Bootstrap JS -->

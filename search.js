@@ -1,6 +1,21 @@
 const moviesContainer = document.getElementById('movies');
 const apiKey = '04c35731a5ee918f014970082a0088b1';
 
+//ADD YEAR Buttons
+const date = new Date(Date.now()).getFullYear();
+const filtersList = document.getElementById('filters-list');
+
+function addYearButtons() {
+    return `<li><button type="button" class="year d-none" id="${date}" >${date}</button></li>
+<li><button type="button" class="year d-none" id="${date-1}" >${date-1}</button></li>
+<li><button type="button" class="year d-none" id="${date-2}" >${date-2}</button></li>
+<li><button type="button" class="year d-none" id="${date-3}" >${date-3}</button></li>
+<li><button type="button" class="year d-none" id="${date-4}" >${date-4}</button></li>
+<li><button type="button" class="year d-none" id="${date-5}" >${date-5}</button></li>`;
+}
+
+filtersList.innerHTML += addYearButtons()
+
 let pictureSize;
 window.innerWidth < 576 ? pictureSize = 342 : pictureSize = 185;
 
@@ -38,6 +53,7 @@ const playlist_btn = [btn_nowPlay, btn_trending, btn_upcoming, btn_popular, btn_
 
 const playlist_btns = document.getElementsByClassName("playlist");
 const cat_btns = document.getElementsByClassName("cat");
+
 const year_btns = document.getElementsByClassName("year");
 
 const wrapper = document.getElementById('filters');
@@ -469,6 +485,6 @@ function showDetails(movieId) {
     params = "?" + new URLSearchParams({
         movie: `${movieId}`
     })
-    window.location.href = 'info.php'+params;
+    window.location.href = 'info.php' + params;
     // window.location = params;
 }

@@ -29,6 +29,9 @@ p {
     transform: scale(1.03);
 }
 
+.card-img-top {
+    aspect-ratio: 92/137;
+}
 
 .searchbar button {
     background: none;
