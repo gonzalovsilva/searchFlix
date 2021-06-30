@@ -1,7 +1,11 @@
 const moviesContainer = document.getElementById('movies');
 const apiKey = '04c35731a5ee918f014970082a0088b1';
-const posters = 'https://images.tmdb.org/t/p/w185'
-const tmdbBaseUrl = 'https://api.themoviedb.org/3'
+
+let pictureSize;
+window.innerWidth < 576 ? pictureSize = 342 : pictureSize = 185;
+
+const posters = `https://images.tmdb.org/t/p/w${pictureSize}`;
+const tmdbBaseUrl = 'https://api.themoviedb.org/3';
 const search_input = document.getElementById('search_input');
 const result = document.getElementById('result');
 
