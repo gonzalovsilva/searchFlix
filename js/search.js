@@ -25,6 +25,7 @@ const search_input = document.getElementById('search_input');
 const result = document.getElementById('result');
 
 const searchForm = document.getElementById('switch_ctrl');
+const totalMovies = document.getElementById('total-movies');
 
 //FIND BUTTONS
 const findPlaylist = document.getElementById('findPlaylist');
@@ -273,6 +274,7 @@ async function getMovies(search, category = []) {
     }
     console.log('nPages = ' + nPages);
     console.log('Result = ' + result);
+    totalMovies.innerHTML = `(${result})`;
 }
 
 function findCommonElements(arr1, arr2) {
@@ -372,6 +374,8 @@ function getParam(paramName) {
 document.addEventListener("DOMContentLoaded", () => {
 
     const params = new URLSearchParams(window.location.search);
+
+    totalMovies.innerHTML = `...`;
 
     if (Array.from(params).length) {
 

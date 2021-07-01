@@ -77,12 +77,14 @@ p {
 .search_icon {
     height: 40px;
     width: 40px;
-    /* float: right; */
-    /* justify-content: center; */
-    /* align-items: center; */
     border-radius: 50%;
     color: white;
     text-decoration: none;
+}
+
+.search_icon .icon{
+    max-width: 40%;
+    padding-bottom: 3px;
 }
 
 .row-cols-5>* {
@@ -132,8 +134,6 @@ p {
     margin-top: 20px;
     margin-bottom: 20px;
     padding: 5px;
-    /* background-color: #363636; */
-    /* border-radius: 10px; */
 }
 
 #switch_ctrl {
