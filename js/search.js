@@ -265,6 +265,7 @@ let nPages = 1;
 
 async function getMovies(search, category = []) {
     console.log('calling');
+    totalMovies.innerHTML = `...`;
     let result = 0;
 
     for (let i = 1; i <= nPages; i++) {
@@ -374,8 +375,6 @@ function getParam(paramName) {
 document.addEventListener("DOMContentLoaded", () => {
 
     const params = new URLSearchParams(window.location.search);
-
-    totalMovies.innerHTML = `...`;
 
     if (Array.from(params).length) {
 
